@@ -1,0 +1,211 @@
+<div class="container">
+  <mat-grid-list cols="2" rowHeight="1:1">
+    <mat-grid-tile>
+      <mat-card class="example-card">
+        <mat-card-title>Cómo pagar tu compra</mat-card-title>
+        <mat-card-content>
+          <div class="mt-3"></div>
+          <h3>
+            Podés pagar con cualquiera de estos medios y tu compra va a estar
+            100% protegida. Si el producto no es lo que esperabas, te
+            devolveremos el dinero .
+          </h3>
+          <mat-list>
+            <mat-list-item
+              ><mat-icon>credit_card</mat-icon> Tarjetas de crédito
+            </mat-list-item>
+            <div class="mt-8" style="text-align: center">
+              <h2>
+                <img
+                  src="../assets/visalogo.png"
+                  width="60px"
+                  alt="Visa logo"
+                />
+                &nbsp;
+                <img
+                  src="../assets/cencosudlogo.png"
+                  width="60px"
+                  alt="Cencosud logo"
+                />
+                &nbsp;
+                <img
+                  src="../assets/mastercard.png"
+                  width="60px"
+                  alt="Master card logo"
+                />
+                &nbsp;
+                <img src="../assets/cabal.png" width="60px" alt="Cabal logo" />
+                &nbsp;
+                <img
+                  src="../assets/naranjalogo.png"
+                  width="60px"
+                  alt="Naranja logo"
+                />
+              </h2>
+            </div>
+
+            <mat-list-item
+              ><mat-icon> money</mat-icon>Efectivo 1 pago</mat-list-item
+            >
+            <div class="mt-6">
+              <h2 style="text-align: center">
+                <img
+                  src="../assets/rapipago.png"
+                  width="60px"
+                  alt="Rapipago logo"
+                />
+                &nbsp;
+                <img
+                  src="../assets/pagofaicl.png"
+                  width="60px"
+                  alt="Pago fácil logo"
+                />
+              </h2>
+              <div class="mt-6">
+                <h4></h4>
+              </div>
+            </div>
+          </mat-list>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile
+      ><mat-card class="example-card">
+        <mat-card-title>Devolución de productos</mat-card-title>
+        <div class="mt-3"></div>
+        <mat-card-content>
+          <mat-accordion>
+            <mat-expansion-panel
+              (opened)="panelOpenState = true"
+              (closed)="panelOpenState = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  ><mat-icon>swap_horizontal_circle</mat-icon>
+                  ¿Cómo puedo devolver un producto?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <h3>
+                Para devolver un producto, buscá la opción “Devolver gratis” que
+                aparece en el menú de la compra que ya no querés y seguí los
+                pasos. Te vamos a dar una etiqueta de devolución gratis para que
+                envíes el producto de vuelta. Según la información que tengamos
+                sobre la devolución, a veces te vamos a pedir que hables con el
+                vendedor antes de tener la etiqueta.
+              </h3>
+
+              <mat-expansion-panel
+                (opened)="panelOpenState = true"
+                (closed)="panelOpenState = false"
+              >
+                <mat-expansion-panel-header>
+                  <mat-panel-title
+                    ><mat-icon>cancel</mat-icon>
+                    Productos que no tienen devolución
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <h3>
+                  Alimentos, bebidas, artículos para adultos, joyas y relojes,
+                  ropa, calzado, accesorios y vehículos.
+                </h3>
+              </mat-expansion-panel>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <mat-divider></mat-divider>
+          <div class="mt-3"></div>
+          <!-- Segundo acordeón desplegable -->
+          <mat-accordion>
+            <mat-expansion-panel
+              (opened)="panelOpenState = true"
+              (closed)="panelOpenState = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  ><mat-icon>access_time</mat-icon>
+                  ¿Cuánto tiempo tengo para realizar una devolución?
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <h3>
+                Tenés 30 días corridos para devolverlo desde que te llegó.
+              </h3>
+
+              <mat-expansion-panel
+                (opened)="panelOpenState = true"
+                (closed)="panelOpenState = false"
+              >
+                <mat-expansion-panel-header>
+                  <mat-panel-title
+                    ><mat-icon> beenhere</mat-icon>
+                    Estado del producto
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <h3>
+                  <p>
+                    Si te arrepentiste de comprar el producto o es diferente de
+                    lo que pediste: - Debe estar sin marcas de mal uso y tal
+                    cual lo recibiste.
+                  </p>
+                  <p>Debe tener sus accesorios, manuales y etiquetas.</p>
+                  <p>
+                    Si es un celular, notebook, tablet o smartwatch, debe estar
+                    desbloqueado, sin claves que impidan su uso.
+                  </p>
+                </h3>
+              </mat-expansion-panel>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <div class="mt-3"></div>
+          <!-- Tercer acordeón desplegable -->
+          <mat-accordion>
+            <mat-expansion-panel
+              (opened)="panelOpenState = true"
+              (closed)="panelOpenState = false"
+            >
+              <mat-expansion-panel-header>
+                <mat-panel-title
+                  ><mat-icon>label_important</mat-icon>
+                  Políticas de devolución
+                </mat-panel-title>
+              </mat-expansion-panel-header>
+              <h3>
+                Los productos pueden devolverse gratis, sin importar el motivo.
+                Solo hay algunos productos específicos que no tienen devolución.
+                En ese caso, vas a poder acordar una solución con el vendedor
+                iniciando un reclamo si lo necesitas.
+              </h3>
+
+              <mat-expansion-panel
+                (opened)="panelOpenState = true"
+                (closed)="panelOpenState = false"
+              >
+                <mat-expansion-panel-header>
+                  <mat-panel-title
+                    ><mat-icon>help_outline</mat-icon>
+                    ¿Puedo cambiar un producto?
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <h3>
+                  Si bien no podemos cambiar un producto que compraste, podés
+                  solicitar la devolución y recuperar tu dinero para comprar lo
+                  que quieras. En caso de tener un reclamo abierto, puedes
+                  acordar con el vendedor la posibilidad de reemplazar el
+                  producto.
+                </h3>
+              </mat-expansion-panel>
+            </mat-expansion-panel>
+          </mat-accordion>
+          <mat-list>
+            <mat-list-item> </mat-list-item>
+          </mat-list>
+        </mat-card-content>
+        <mat-card-actions> </mat-card-actions> </mat-card
+    ></mat-grid-tile>
+    <mat-grid-tile>
+
+    </mat-grid-tile>
+    <mat-grid-tile>
+
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

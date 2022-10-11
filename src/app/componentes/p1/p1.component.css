@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap');
+
+
+body {
+  background: #000 center/cover
+    url("https://img.freepik.com/premium-vector/cute-cat-operating-laptop-cartoon-vector-illustration-animal-technology-concept-isolated-flat-cartoon-style_138676-1870.jpg")
+    repeat;
+  background-size: 175px 175px;
+  height: 100%;
+}
+
+.example-card {
+  background-color: royalblue;
+  max-width: 500px;
+  border-radius: 10px;
+  margin: 15px;
+  border: solid 2px black;
+  font-family: 'Rajdhani', sans-serif 20px;
+}
+
+.example-header-image {
+  background-image: url("https://static.vecteezy.com/system/resources/thumbnails/003/747/223/small/pc-logo-monogram-with-slash-style-design-template-free-vector.jpg");
+  background-size: cover;
+  font-family: 'Gemunu Libre', sans-serif;
+}
+
+.mat-raised-button {
+  background-color: #b6ffff;
+  color: black;
+}
+
+.mat-raised-button:hover {
+  box-shadow: inset 160px 0 0 0 greenyellow;
+}
+
+.btn-links {
+  background-color: palegreen;
+}
+
+.btn-links:hover{
+  box-shadow: inset 160px 0 0 0 greenyellow;
+}
+
+
+

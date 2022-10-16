@@ -17,6 +17,7 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MaterialModule } from '../../material.module';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { MaterialModule } from '../../material.module';
     MatSidenavModule,
     MatIconModule,
     MatListModule,
-    MaterialModule
+    MaterialModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
